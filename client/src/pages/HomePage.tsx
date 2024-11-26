@@ -70,7 +70,7 @@ const HomePage = () => {
                         </p>
                         <div className='flex justify-center flex-nowrap'>
                             <a
-                                href='https://github.com/roynulrohan/Stocks.io'
+                                href='/'
                                 aria-label='GitHub'
                                 target='_blank'
                                 rel='noopener noreferrer'

@@ -38,8 +38,10 @@ const init = async () => {
             context: async ({ req }) => ({ token: req.headers.authorization }),
         })
     );
-
+//   console.log(process.env.MONGO_USER+ "       "+process.env.MONGO_PASSWORD);
     const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.oisbb.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+   
+    mongoose.set('strictQuery', false);
 
     mongoose
         .connect(uri)
